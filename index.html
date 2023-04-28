@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scripts/style.css">
+    <!-- <script defer src="scripts/script.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -15,35 +16,36 @@
             <h1>Registration</h1>
             <div class="input-control">
                 <label for="username">Username</label>
-                <input id="username" name="username" type="text">
+                <input id="username" name="username" type="text" maxlength="10">
                 <div class="error"></div>
             </div>
             <div class="input-control">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="text">
+                <input id="email" name="email" type="text" maxlength="30">
                 <div class="error"></div>
             </div>
             <div class="input-control">
                 <label for="password">Password</label>
-                <input id="password"name="password" type="password">
+                <input id="password"name="password" type="password" maxlength="6">
                 <div class="error"></div>
             </div>
             <div class="input-control">
                 <label for="password2">Password again</label>
-                <input id="password2"name="password2" type="password">
+                <input id="password2"name="password2" type="password" maxlength="6">
                 <div class="error"></div>
             </div>
             <button type="submit" onclick="addRegistration()">Sign Up</button>
-            <table class="card">
+            <!-- <table class="card" id="card">
                 <thead class="thead">
                     <th>Name</th>
                     <th>Email</th>
                     <th>Password</th>
                 </thead>
                 <tbody id="bodyAgenda"></tbody>
-            </table>
+            </table> -->
         </form>
     </div>
+    <div id="cards-container"></div>
     <script defer src="scripts/script.js"></script>
 </body>
 </html>
